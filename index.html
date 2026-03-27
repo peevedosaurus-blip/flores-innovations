@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flores Innovations | Grain Bin Installation, Millwright & Fabrication Services</title>
+  <meta name="description" content="Flores Innovations provides professional grain bin installation, millwright work, and custom fabrication for farmers and agricultural operations. We travel nationwide to get the job done right." />
+  <meta name="keywords" content="grain bin installation, grain bin contractor, millwright services, agricultural fabrication, grain storage, farm grain bins, nationwide grain bin install" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:       #c41230;
+      --red-dark:  #96001f;
+      --red-light: #e8192e;
+      --silver:    #8a9199;
+      --steel:     #b0b8c1;
+      --charcoal:  #1e2124;
+      --mid:       #3d4145;
+      --muted:     #6b7280;
+      --light:     #f4f5f6;
+      --white:     #ffffff;
+      --border:    #e2e4e7;
+      --radius:    4px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 112%; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--white);
+      color: var(--charcoal);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    /* ─── NAV ─────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 56px;
+      height: 72px;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--red); }
+
+    .nav-cta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--red);
+      padding: 11px 24px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--red-dark); }
+
+    /* ─── HERO ────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding-top: 72px;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      padding: 80px 56px 80px 56px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: clamp(3rem, 5vw, 5rem);
+      line-height: 1;
+      letter-spacing: 0.01em;
+      color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+
+    h1 em {
+      color: var(--red);
+      font-style: normal;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-travel-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fef2f4;
+      border: 1px solid rgba(196,18,48,0.2);
+      border-radius: 24px;
+      padding: 7px 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 36px;
+    }
+
+    .hero-travel-note::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--red);
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+
+    .btn-ghost {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      border: 1px solid var(--border);
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--red); color: var(--red); }
+
+    .hero-right {
+      height: 100%;
+      min-height: 100vh;
+      background: var(--light);
+      border-left: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* diagonal accent stripe */
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 320px;
+      height: 320px;
+      background: rgba(196,18,48,0.06);
+      transform: rotate(45deg);
+    }
+
+    .hero-right::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(196,18,48,0.04);
+      transform: rotate(45deg);
+    }
+
+    .hero-ph {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--steel);
+      border: 1px dashed var(--border);
+      padding: 48px 60px;
+      border-radius: var(--radius);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-ph span {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--border);
+      margin-bottom: 8px;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+    }
+
+    /* ─── STATS BAR ───────────────────────────────── */
+    .stats-bar {
+      background: var(--charcoal);
+      padding: 32px 56px;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .stat { text-align: center; }
+
+    .stat-num {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: var(--red-light);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--steel);
+      margin-top: 4px;
+    }
+
+    /* ─── SHARED SECTION ──────────────────────────── */
+    section { padding: 96px 56px; }
+
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+      letter-spacing: 0.01em;
+      color: var(--charcoal);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    /* ─── SERVICES ────────────────────────────────── */
+    #services { background: var(--white); }
+
+    .services-header {
+      margin-bottom: 52px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 44px 36px;
+      position: relative;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-card:hover { background: #fafafa; }
+
+    .service-tag {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--red);
+      background: #fef2f4;
+      border: 1px solid rgba(196,18,48,0.18);
+      padding: 4px 10px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+      letter-spacing: 0.01em;
+    }
+
+    .service-card > p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.75;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      list-style: none;
+    }
+
+    .service-list li {
+      font-size: 0.88rem;
+      color: var(--mid);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 400;
+    }
+
+    .service-list li:last-child { border-bottom: none; }
+
+    .service-list li::before {
+      content: '';
+      width: 14px;
+      height: 2px;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    /* ─── TRAVEL SECTION ──────────────────────────── */
+    #travel {
+      background: var(--charcoal);
+      padding: 80px 56px;
+    }
+
+    .travel-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #travel .section-label { color: var(--steel); }
+    #travel h2 { color: var(--white); }
+    #travel .section-intro { color: var(--steel); max-width: 100%; margin-bottom: 36px; }
+
+    .travel-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .travel-badge {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--steel);
+      border: 1px solid rgba(176,184,193,0.3);
+      padding: 7px 14px;
+      border-radius: 2px;
+    }
+
+    .travel-callouts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .travel-callout {
+      border-left: 3px solid var(--red);
+      padding-left: 16px;
+    }
+
+    .travel-callout strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .travel-callout span {
+      font-size: 0.85rem;
+      color: var(--steel);
+      font-weight: 300;
+    }
+
+    .travel-right {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+    }
+
+    .travel-right h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .travel-right > p {
+      font-size: 0.9rem;
+      color: var(--steel);
+      font-weight: 300;
+      margin-bottom: 24px;
+      line-height: 1.75;
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--steel);
+      font-weight: 300;
+    }
+
+    .check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .check::after {
+      content: '';
+      width: 6px;
+      height: 4px;
+      border-left: 1.5px solid white;
+      border-bottom: 1.5px solid white;
+      transform: rotate(-45deg) translateY(-1px);
+    }
+
+    /* ─── ABOUT ───────────────────────────────────── */
+    #about { background: var(--light); }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-ph {
+      aspect-ratio: 4/3;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .about-ph p {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--steel);
+    }
+
+    .about-text p {
+      font-size: 0.97rem;
+      color: var(--muted);
+      line-height: 1.85;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .about-values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .value-item {
+      border-left: 3px solid var(--red);
+      padding-left: 14px;
+    }
+
+    .value-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      margin-bottom: 4px;
+    }
+
+    .value-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    /* ─── GALLERY ─────────────────────────────────── */
+    #gallery { background: var(--white); }
+
+    .gallery-header { margin-bottom: 48px; }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .gallery-item {
+      background: var(--light);
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .gallery-item:hover { border-color: var(--red); }
+
+    .gallery-item .ph-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--steel);
+    }
+
+    /* ─── CONTACT ─────────────────────────────────── */
+    #contact { background: var(--white); }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 80px;
+      align-items: start;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+
+    .contact-info h2 { margin-bottom: 16px; }
+    .contact-info .section-intro { margin-bottom: 40px; }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: #fef2f4;
+      border: 1px solid rgba(196,18,48,0.2);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--red);
+      flex-shrink: 0;
+    }
+
+    .info-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 3px;
+    }
+
+    .info-item span {
+      font-size: 0.93rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 40px 36px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 11px 14px;
+      color: var(--charcoal);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 400;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--red); }
+
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    /* ─── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--charcoal);
+      padding: 28px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo img {
+      height: 34px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.6;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--silver);
+      font-weight: 300;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--silver);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--red-light); }
+
+    /* ─── HAMBURGER MENU ──────────────────────────── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: var(--charcoal);
+      border-radius: 2px;
+      transition: transform 0.25s, opacity 0.2s;
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 72px; left: 0; right: 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      z-index: 99;
+      flex-direction: column;
+      padding: 16px 24px 24px;
+      gap: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--red); }
+
+    .mobile-nav .mobile-cta {
+      margin-top: 12px;
+      text-align: center;
+      background: var(--red);
+      color: var(--white);
+      padding: 14px;
+      border-radius: var(--radius);
+      border-bottom: none;
+    }
+
+    /* ─── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      section { padding: 64px 24px; }
+      #travel { padding: 64px 24px; }
+
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 100px 24px 52px; }
+      .hero-right { display: none; }
+
+      .stats-bar {
+        gap: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .stat {
+        padding: 28px 16px;
+        border-right: 1px solid rgba(255,255,255,0.06);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+
+      .services-grid { grid-template-columns: 1fr; }
+
+      .travel-inner { grid-template-columns: 1fr; gap: 40px; }
+      .travel-callouts { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-ph { display: none; }
+
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+
+      footer { flex-direction: column; align-items: center; text-align: center; padding: 24px; gap: 16px; }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.6rem; }
+      h2 { font-size: 2rem; }
+
+      section { padding: 56px 20px; }
+      #travel { padding: 56px 20px; }
+
+      .hero-left { padding: 88px 20px 48px; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions a { text-align: center; }
+
+      .travel-callouts { grid-template-columns: 1fr; }
+      .travel-right { padding: 28px 22px; }
+
+      .about-values { grid-template-columns: 1fr; }
+
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form { padding: 28px 20px; }
+
+      .gallery-grid { grid-template-columns: 1fr; }
+
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    }
+
+    @media (max-width: 380px) {
+      h1 { font-size: 2.1rem; }
+      .stat-num { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <img src="/mnt/user-data/uploads/IMG_5574.jpeg" alt="Flores Innovations" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#travel">We Travel</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#travel" class="mobile-link">We Travel</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#gallery" class="mobile-link">Our Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="mobile-cta mobile-link">Get a Quote</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Grain Bins · Millwright · Fabrication</div>
+      <h1>Precision Work,<br><em>Anywhere</em><br>You Need It.</h1>
+      <p class="hero-sub">
+        Flores Innovations delivers professional grain bin installation, millwright services, and custom fabrication for agricultural operations across the country.
+      </p>
+      <div class="hero-travel-note">We travel nationwide for grain bin projects</div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a Quote</a>
+        <a href="#travel" class="btn-ghost">Our Service Area</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-ph">
+        <span>[ ]</span>
+        Hero Photo<br>Coming Soon
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">300+</div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Multi-State</div>
+      <div class="stat-label">Service Area</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Owner-Operated</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header">
+      <div class="section-label">What We Do</div>
+      <h2>Our Services</h2>
+      <p class="section-intro">From installation to fabrication, we handle the hands-on work that keeps your operation running — on your farm or ours.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-tag">Grain Bins</div>
+        <h3>Grain Bin Services</h3>
+        <p>Full-service grain bin installation and maintenance for farms of any scale. We travel to your site and get it done right, on schedule.</p>
+        <ul class="service-list">
+          <li>New bin installation & setup</li>
+          <li>Bin repair & structural work</li>
+          <li>Aeration & ventilation systems</li>
+          <li>Flooring & sweep auger install</li>
+          <li>Ladder & safety upgrades</li>
+          <li>On-site travel available nationwide</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-tag">Millwright</div>
+        <h3>Millwright Work</h3>
+        <p>Precision millwright services for agricultural and industrial facilities. We install, align, and maintain the machinery your operation depends on.</p>
+        <ul class="service-list">
+          <li>Equipment installation & alignment</li>
+          <li>Conveyor & elevator systems</li>
+          <li>Bearing & shaft work</li>
+          <li>Preventive maintenance</li>
+          <li>Industrial troubleshooting</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-tag">Fabrication</div>
+        <h3>Custom Fabrication</h3>
+        <p>One-off and production metal fab built to spec. If you can describe it, we can build it — from structural components to custom equipment mods.</p>
+        <ul class="service-list">
+          <li>Custom steel fabrication</li>
+          <li>Welding & structural repair</li>
+          <li>Equipment modifications</li>
+          <li>Guards, frames & supports</li>
+          <li>Shop & on-site work available</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL / FARMER TARGETING SECTION -->
+  <section id="travel">
+    <div class="travel-inner">
+      <div>
+        <div class="section-label">Serving Farmers Nationwide</div>
+        <h2>We Come<br>To You.</h2>
+        <p class="section-intro">
+          Grain bin installation isn't a local job — it's wherever your farm is. Flores Innovations is built to travel. Whether you're in the Midwest, the South Plains, or anywhere grain is grown, we'll get to your site, get set up, and get it done.
+        </p>
+        <div class="travel-badges">
+          <div class="travel-badge">Midwest</div>
+          <div class="travel-badge">South Plains</div>
+          <div class="travel-badge">Great Plains</div>
+          <div class="travel-badge">Southern US</div>
+          <div class="travel-badge">+ More Regions</div>
+        </div>
+        <div class="travel-callouts">
+          <div class="travel-callout">
+            <strong>On-Site Coordination</strong>
+            <span>We work directly with you from planning through completion.</span>
+          </div>
+          <div class="travel-callout">
+            <strong>Project-Based Travel</strong>
+            <span>We travel for the job — no subcontractors, no handoffs.</span>
+          </div>
+          <div class="travel-callout">
+            <strong>Clear Communication</strong>
+            <span>You know exactly where we are and what's happening.</span>
+          </div>
+          <div class="travel-callout">
+            <strong>Farm-Ready</strong>
+            <span>We understand ag operations and work around your schedule.</span>
+          </div>
+        </div>
+      </div>
+      <div class="travel-right">
+        <h3>Why Farmers Choose Flores Innovations</h3>
+        <p>Grain storage is one of the most important investments on your farm. Here's what you get when you work with us:</p>
+        <ul class="checklist">
+          <li><div class="check"></div>Owner on-site for every project — you work directly with Brayan</li>
+          <li><div class="check"></div>Proper installation the first time, no shortcuts</li>
+          <li><div class="check"></div>Experience with multiple bin brands and configurations</li>
+          <li><div class="check"></div>Transparent pricing before work begins</li>
+          <li><div class="check"></div>Flexible scheduling around planting and harvest seasons</li>
+          <li><div class="check"></div>References available from completed farm projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-ph">
+        <p>Photo Coming Soon</p>
+      </div>
+      <div class="about-text">
+        <div class="section-label">About Flores Innovations</div>
+        <h2>Owner-Operated.<br>Built on Reputation.</h2>
+        <p>
+          Flores Innovations is Brayan's business — and that means when you reach out, you're dealing with the person who will actually be on your job site. No middlemen, no surprises, no subcontractors doing work you didn't agree to.
+        </p>
+        <p>
+          With years of experience in grain bin installation, millwright work, and fabrication, Brayan has built a track record on farms and industrial sites by doing the job right and standing behind the work.
+        </p>
+        <div class="about-values">
+          <div class="value-item">
+            <strong>Quality Workmanship</strong>
+            <span>Every install done to last, no cutting corners.</span>
+          </div>
+          <div class="value-item">
+            <strong>Reliable & On-Time</strong>
+            <span>We show up when we say we will.</span>
+          </div>
+          <div class="value-item">
+            <strong>Honest Pricing</strong>
+            <span>Fair quotes, no hidden costs.</span>
+          </div>
+          <div class="value-item">
+            <strong>Farmer-Focused</strong>
+            <span>We work around your operation, not the other way around.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="gallery-header">
+      <div class="section-label">Portfolio</div>
+      <h2>Our Work</h2>
+      <p class="section-intro">Photos coming soon — check back to see completed grain bin, millwright, and fabrication projects.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><div class="ph-label">Grain Bin Install</div></div>
+      <div class="gallery-item"><div class="ph-label">Millwright Project</div></div>
+      <div class="gallery-item"><div class="ph-label">Custom Fabrication</div></div>
+      <div class="gallery-item"><div class="ph-label">Project Photo</div></div>
+      <div class="gallery-item"><div class="ph-label">Project Photo</div></div>
+      <div class="gallery-item"><div class="ph-label">Project Photo</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="section-label">Get in Touch</div>
+        <h2>Let's Talk<br>About Your Project.</h2>
+        <p class="section-intro">
+          Fill out the form and Brayan will reach out to discuss your grain bin, millwright, or fabrication needs — and provide a fair, straightforward estimate.
+        </p>
+        <div class="info-item">
+          <div class="info-icon">PH</div>
+          <div>
+            <strong>Phone</strong>
+            <span>(XXX) XXX-XXXX — placeholder</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">EM</div>
+          <div>
+            <strong>Email</strong>
+            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a1a6aea788aea4a7baadbba1a6a6a7bea9bca1a7a6bbe6aba7a5">[email&#160;protected]</a> — placeholder</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">SVC</div>
+          <div>
+            <strong>Service Area</strong>
+            <span>Based in [City, State] — traveling nationwide for grain bin projects</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Smith" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="(555) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="location">Farm / Project Location</label>
+          <input type="text" id="location" placeholder="City, State" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service">
+            <option value="" disabled selected>Select a service...</option>
+            <option>Grain Bin Installation</option>
+            <option>Grain Bin Repair / Maintenance</option>
+            <option>Millwright Services</option>
+            <option>Custom Fabrication</option>
+            <option>Not Sure — Need a Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea id="message" placeholder="Describe your project, number of bins, location, timeline, or any questions..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; cursor:pointer; border:none; font-size:0.88rem; padding:14px;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#hero" class="footer-logo">
+      <img src="/mnt/user-data/uploads/IMG_5574.jpeg" alt="Flores Innovations" />
+    </a>
+    <p class="footer-copy">© 2025 Flores Innovations. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#travel">Service Area</a></li
